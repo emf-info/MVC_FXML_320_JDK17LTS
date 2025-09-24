@@ -64,6 +64,19 @@ namespace services {
     class IServiceLocation{ <<interface>> }
     class IServiceMeteo{ <<interface>> }
 }
+
+    style View fill:#ffffcc,stroke:#000,stroke-width:1px
+    style IViewForController fill:#ffffcc,stroke:#000,stroke-width:1px
+    style Controller fill:#ccffcc,stroke:#000,stroke-width:1px
+    style IControllerForView fill:#ccffcc,stroke:#000,stroke-width:1px
+    style ServiceMeteo fill:#ccffff,stroke:#000,stroke-width:1px
+    style ServiceLocation fill:#ccffff,stroke:#000,stroke-width:1px
+    style IServiceLocation fill:#ccffff,stroke:#000,stroke-width:1px
+    style IServiceMeteo fill:#ccffff,stroke:#000,stroke-width:1px
+    style PrevisionMeteo fill:#ffccff,stroke:#000,stroke-width:1px
+    style Voiture fill:#ffccff,stroke:#000,stroke-width:1px
+    style Application fill:#eeeeee,stroke:#000,stroke-width:1px
+
 ```
 ### Détail des classes du projet - les modèles
 ```mermaid
@@ -83,6 +96,9 @@ classDiagram
         +getModele() String
         +toString() String
     }
+
+    style PrevisionMeteo fill:#ffccff,stroke:#000,stroke-width:1px
+    style Voiture fill:#ffccff,stroke:#000,stroke-width:1px
 
 ```
 ### Détail des classes du projet - les services
@@ -138,6 +154,17 @@ classDiagram
     ServiceMeteo ..|> IServiceMeteo : "implemente"
     ServiceLocation ..|> IServiceLocation : "implemente"
 
+    style View fill:#ffffcc,stroke:#000,stroke-width:1px
+    style IViewForController fill:#ffffcc,stroke:#000,stroke-width:1px
+    style Controller fill:#ccffcc,stroke:#000,stroke-width:1px
+    style IControllerForView fill:#ccffcc,stroke:#000,stroke-width:1px
+    style ServiceMeteo fill:#ccffff,stroke:#000,stroke-width:1px
+    style ServiceLocation fill:#ccffff,stroke:#000,stroke-width:1px
+    style IServiceLocation fill:#ccffff,stroke:#000,stroke-width:1px
+    style IServiceMeteo fill:#ccffff,stroke:#000,stroke-width:1px
+    style PrevisionMeteo fill:#ffccff,stroke:#000,stroke-width:1px
+    style Voiture fill:#ffccff,stroke:#000,stroke-width:1px
+    style Application fill:#eeeeee,stroke:#000,stroke-width:1px
 ```
 
 ### Détail des classes du projet - le pattern MVC
@@ -203,4 +230,15 @@ classDiagram
 
     Application ..> Controller : "utilise"
 
+    style View fill:#ffffcc,stroke:#000,stroke-width:1px
+    style IViewForController fill:#ffffcc,stroke:#000,stroke-width:1px
+    style Controller fill:#ccffcc,stroke:#000,stroke-width:1px
+    style IControllerForView fill:#ccffcc,stroke:#000,stroke-width:1px
+    style ServiceMeteo fill:#ccffff,stroke:#000,stroke-width:1px
+    style ServiceLocation fill:#ccffff,stroke:#000,stroke-width:1px
+    style IServiceLocation fill:#ccffff,stroke:#000,stroke-width:1px
+    style IServiceMeteo fill:#ccffff,stroke:#000,stroke-width:1px
+    style PrevisionMeteo fill:#ffccff,stroke:#000,stroke-width:1px
+    style Voiture fill:#ffccff,stroke:#000,stroke-width:1px
+    style Application fill:#eeeeee,stroke:#000,stroke-width:1px
 ```
